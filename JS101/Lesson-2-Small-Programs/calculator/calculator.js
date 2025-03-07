@@ -17,6 +17,15 @@ END
 
 */
 const readline = require("readline-sync");
+const calculatorMessages = require("./calculator_messages.json");
+
+const language = getValue(
+  "Please select a language, enter one of english, french, german, spanish, italian (default english)",
+  (lang) => false,
+  ""
+);
+
+const MESSAGES = calculatorMessages[language];
 
 function prompt(message) {
   console.log(`=> ${message}`);
@@ -26,12 +35,12 @@ function invalidNumber(number) {
   return number.trimStart() === "" || Number.isNaN(Number(number));
 }
 
-function getValue(message, invalidCondition, invalidMessage) {
+function getValue(message, isInvalid, invalidMessage) {
   let value;
   prompt(message);
   value = readline.question();
 
-  while (invalidCondition(value)) {
+  while (isInvalid(value)) {
     prompt(invalidMessage);
     value = readline.question();
   }
@@ -55,41 +64,42 @@ function performOperation(operation, number1, number2) {
       output = Number(number1) / Number(number2);
       break;
     default:
-      prompt("Please enter valid operation");
+      prompt(MESSAGES.enterValidInput);
   }
 
-  prompt(`The result is ${output}`);
+  prompt(`${MESSAGES.resultIs} ${output}`);
 }
-prompt("Welcome to Calculator!");
 
 function performCalculation() {
   let number1 = getValue(
-    "What is the first number!",
+    MESSAGES.whatIsFirstNumber,
     invalidNumber,
-    "Hmm... that doesn't look like a valid number."
+    `Hmm... ${MESSAGES.doesntLookLikeNumber}`
   );
 
   let number2 = getValue(
-    "What is the second number!",
+    MESSAGES.whatIsSecondNumber,
     invalidNumber,
-    "Hmm... that doesn't look like a valid number."
+    `Hmm... ${MESSAGES.doesntLookLikeNumber}`
   );
   let operation = getValue(
-    "What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide",
+    `${MESSAGES.whatOperation}?\n1) ${MESSAGES.add} 2) ${MESSAGES.subtract} 3) ${MESSAGES.multiply} 4) ${calculatorMessages.divide}`,
     (operation) => !["1", "2", "3", "4"].includes(operation),
-    "please enter 1, 2, 3 or 4"
+    `${MESSAGES.pleaseEnter} 1, 2, 3 or 4`
   );
 
   performOperation(operation, number1, number2);
 }
+
+prompt(`${MESSAGES.welcomeToCal}!`);
 
 let anotherCalculation;
 
 do {
   performCalculation();
   anotherCalculation = getValue(
-    "Do you want to perform another calculation? (y / n): ",
+    `${MESSAGES.doYouWantAnotherCal}? (y / n): `,
     (answer) => !["y", "n", "Y", "N"].includes(answer),
-    "please enter Y or N"
+    `${MESSAGES.pleaseEnter} Y or N`
   );
 } while (anotherCalculation.toLowerCase() === "y");
