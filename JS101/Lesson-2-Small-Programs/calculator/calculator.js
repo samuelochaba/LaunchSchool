@@ -19,12 +19,6 @@ END
 const readline = require("readline-sync");
 const calculatorMessages = require("./calculator_messages.json");
 
-const language = getValue(
-  "Please select a language, enter one of english, french, german, spanish, italian (default english)",
-  (lang) => false,
-  ""
-);
-
 const MESSAGES = calculatorMessages[language];
 
 function prompt(message) {
@@ -90,6 +84,12 @@ function performCalculation() {
 
   performOperation(operation, number1, number2);
 }
+
+const language = getValue(
+  "Please select a language, enter one of english, french, german, spanish, italian (default english)",
+  (lang) => false,
+  ""
+);
 
 prompt(`${MESSAGES.welcomeToCal}!`);
 
