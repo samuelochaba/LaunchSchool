@@ -1,0 +1,62 @@
+{
+  "en": {
+    "welcome": "Welcome to loan calculator, please enter your preferred language",
+    "enterLoanAmount": "Enter the loan amount",
+    "enterPositiveLoanAmount": "Please enter a positive number > 0",
+    "enterAnnualPercentRate": "Please enter the annual percent rate e.g 5%, 5.8%, enter 0 for no interest loan",
+    "enterLoanDuration": "Enter loan duration in years:",
+    "enterNonNegativeAnnPercent": "Enter a non-negative annual percent rate",
+    "enterPosLoan": "Enter a positive number for loan duration",
+    "monthlyPaymentIs": "The monthly payment for your loan is",
+    "chooseRightOption": "please enter either y, n, Y, N",
+    "anotherCalculation": "do you want to perform another loan calculation"
+  },
+  "fr": {
+    "welcome": "Bienvenue sur le calculateur de prêt, veuillez entrer votre langue préférée",
+    "enterLoanAmount": "Entrez le montant du prêt",
+    "enterPositiveLoanAmount": "Veuillez entrer un nombre positif > 0",
+    "enterAnnualPercentRate": "Veuillez entrer le taux d'intérêt annuel, par ex. 5 %, 5.8 %, entrez 0 pour un prêt sans intérêt",
+    "enterLoanDuration": "Entrez la durée du prêt en années :",
+    "enterNonNegativeAnnPercent": "Entrez un taux d'intérêt annuel non négatif",
+    "enterPosLoan": "Entrez un nombre positif pour la durée du prêt",
+    "monthlyPaymentIs": "Le paiement mensuel de votre prêt est",
+    "chooseRightOption": "veuillez entrer y, n, Y ou N",
+    "anotherCalculation": "voulez-vous effectuer un autre calcul de prêt"
+  },
+  "esp": {
+    "welcome": "Bienvenido al calculador de préstamos, por favor ingrese su idioma preferido",
+    "enterLoanAmount": "Ingrese el monto del préstamo",
+    "enterPositiveLoanAmount": "Por favor, ingrese un número positivo > 0",
+    "enterAnnualPercentRate": "Por favor, ingrese la tasa de interés anual, por ejemplo, 5%, 5.8%, ingrese 0 para un préstamo sin interés",
+    "enterLoanDuration": "Ingrese la duración del préstamo en años:",
+    "enterNonNegativeAnnPercent": "Ingrese una tasa de interés anual no negativa",
+    "enterPosLoan": "Ingrese un número positivo para la duración del préstamo",
+    "monthlyPaymentIs": "El pago mensual de su préstamo es",
+    "chooseRightOption": "por favor, ingrese y, n, Y o N",
+    "anotherCalculation": "¿desea realizar otro cálculo de préstamo?"
+  },
+  "ita": {
+    "welcome": "Benvenuto nel calcolatore di prestiti, inserisci la tua lingua preferita",
+    "enterLoanAmount": "Inserisci l'importo del prestito",
+    "enterPositiveLoanAmount": "Per favore, inserisci un numero positivo > 0",
+    "enterAnnualPercentRate": "Inserisci il tasso di interesse annuale, ad es. 5%, 5.8%, inserisci 0 per un prestito senza interessi",
+    "enterLoanDuration": "Inserisci la durata del prestito in anni:",
+    "enterNonNegativeAnnPercent": "Inserisci un tasso di interesse annuale non negativo",
+    "enterPosLoan": "Inserisci un numero positivo per la durata del prestito",
+    "monthlyPaymentIs": "Il pagamento mensile per il tuo prestito è",
+    "chooseRightOption": "per favore, inserisci y, n, Y o N",
+    "anotherCalculation": "vuoi eseguire un altro calcolo del prestito?"
+  },
+  "ger": {
+    "welcome": "Willkommen beim Kreditrechner, bitte geben Sie Ihre bevorzugte Sprache ein",
+    "enterLoanAmount": "Geben Sie den Kreditbetrag ein",
+    "enterPositiveLoanAmount": "Bitte geben Sie eine positive Zahl > 0 ein",
+    "enterAnnualPercentRate": "Bitte geben Sie den jährlichen Zinssatz ein, z. B. 5 %, 5.8 %, geben Sie 0 für einen zinsfreien Kredit ein",
+    "enterLoanDuration": "Geben Sie die Kreditlaufzeit in Jahren ein:",
+    "enterNonNegativeAnnPercent": "Geben Sie einen nicht negativen jährlichen Zinssatz ein",
+    "enterPosLoan": "Geben Sie eine positive Zahl für die Kreditlaufzeit ein",
+    "monthlyPaymentIs": "Die monatliche Zahlung für Ihren Kredit beträgt",
+    "chooseRightOption": "bitte geben Sie entweder y, n, Y oder N ein",
+    "anotherCalculation": "möchten Sie eine weitere Kreditberechnung durchführen?"
+  }
+}
